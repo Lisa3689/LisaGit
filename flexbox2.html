@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox2</title>
+    
+    <style>
+        p,
+        header,
+        main,
+        nav,
+        section,
+        aside,
+        footer {
+            border: 1px solid red;
+        }
+        
+        header {
+            flex: 0 0 content;
+        }
+        
+        footer {
+            flex: 0 0 content;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+        }
+
+        .main {
+            flex: 1;
+            display: flex;
+            flex-direction: row;
+            justify-content: stretch;
+        }
+        .flexcontainer {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: flex-end;
+            border: 1px solid blue;
+            height: 600px;
+            justify-content: space-around;
+        }
+
+
+        body {
+            display: flex;
+            flex-flow: column;
+            min-height: 100vh;
+        }
+
+        nav {
+            width: 20vw;
+        }
+
+        aside {
+            width: 20vw;
+        }
+
+        section {
+            flex: 1;
+        }
+        
+    
+
+    
+    </style>
+</head>
+
+<body>
+    <h1>Flexbox</h1>
+    <header class="header">
+        Шапка страницы
+    </header>
+
+    <main class="main">
+        <section class="flexcontainer">
+        <p class="art1">Абзац 1</p>
+        <p class="art2">Абзац 2</p>
+        <p class="art3">Абзац 3</p></section>
+
+        <aside id class="aside">Боковая область</aside>
+    </main>
+    <footer class="footer">
+        <p class="footer1">Абзац 1</p>
+        <p class="footer2">Абзац 2</p>
+        <p class="footer3">Абзац 3</p>
+        <p class="footer4">Абзац 4</p>
+    </footer>
+</body>
+
+</html>
