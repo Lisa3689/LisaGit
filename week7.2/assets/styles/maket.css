@@ -1,0 +1,53 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 60px;
+    width: 100px;
+    background-color: aquamarine;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    width: 700px;
+    height: 40px;
+    background-color: blueviolet;
+}
+
+.menu a {
+    /* display: inline-block;
+    margin-right:20px; */
+    color: white;
+}
+
+.btns-group {
+    height:60px;
+    width: 200px;
+    background-color: rgb(83, 43, 226);
+}
+
+.bg-image {
+    width: 100%;
+    height: 500px;
+    padding: 100px; /*сделал текст по середине*/
+    background-color: blanchedalmond;
+}
+
+.main-content {
+    width: 300px;
+    background-color: aquamarine;
+}
+
+.text {
+    font-size: 15px;
+    line-height: 30px;
+}
+
+.head1 {
+    margin-bottom: 30px;
+}
+
